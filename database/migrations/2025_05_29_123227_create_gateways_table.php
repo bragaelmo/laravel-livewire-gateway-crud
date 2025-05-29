@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('gateways', function (Blueprint $table) {
             $table->id();
+            $table->string('nome');
+            $table->string('url');
+            $table->string('private_key')->nullable();
+            $table->string('public_key')->nullable();
+            $table->decimal('tax', 10, 2); 
+            $table->string('logo'); 
             $table->timestamps();
         });
     }
