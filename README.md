@@ -40,7 +40,7 @@ cp .env.example .env
 ### 3.  Instale as dependências PHP
 
 ```bash
-cp .composer install
+composer install
 ```
 
 ### 4.  Gere a chave da aplicação e rode as migrations
