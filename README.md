@@ -1,62 +1,70 @@
-# Teste Laravel Livewire - CRUD de Gateways
+# Laravel Livewire Demo - Payment Gateway CRUD
 
-Este é um projeto de exemplo utilizando **Laravel 11** com **Livewire** para gerenciar um CRUD de Gateways com upload de logo, validações e formulário em modal Bootstrap.
-
----
-
-## ✅ Funcionalidades
-
-- Cadastrar gateway com nome, URL, chaves, taxa e logo
-- Listagem dinâmica com Livewire
-- Edição e exclusão em tempo real
-- Interface responsiva com Bootstrap 5
-- Upload de imagem com preview no modal
+A sample project using **Laravel 11** and **Livewire** to manage a CRUD 
+for payment gateways, including logo upload, validation, and a Bootstrap 
+modal form.
 
 ---
 
-## 📦 Requisitos
+## ✅ Features
+
+- Register a gateway with name, URL, API keys, fee, and logo
+- Dynamic listing powered by Livewire
+- Real-time edit and delete
+- Responsive UI with Bootstrap 5
+- Image upload with live preview in the modal
+
+---
+
+## 📦 Requirements
 
 - PHP >= 8.1
 - Composer
-- MySQL ou PostgreSQL
+- MySQL or PostgreSQL
 
 ---
 
-## ⚙️ Passo a passo para rodar local
+## ⚙️ Getting Started
 
-### 1. Clone o repositório
+### 1. Clone the repository
 
-```bash
-git https://github.com/bragaelmo/TesteLivewire.git
+\`\`\`bash
+git clone https://github.com/bragaelmo/TesteLivewire.git
 cd TesteLivewire
-```
+\`\`\`
 
-### 2.  Copie o arquivo .env e coloque as configurações do seu banco mysql
+### 2. Copy the .env file and set up your database connection
 
-```bash
+\`\`\`bash
 cp .env.example .env
-```
+\`\`\`
 
-### 3.  Instale as dependências PHP
+### 3. Install PHP dependencies
 
-```bash
+\`\`\`bash
 composer install
-```
+\`\`\`
 
-### 4.  Gere a chave da aplicação e rode as migrations
+### 4. Generate the app key and run migrations
 
-```bash
+\`\`\`bash
 php artisan key:generate
 php artisan migrate
 php artisan storage:link
-```
+\`\`\`
 
-### ▶️ Rodando o projeto
-```bash
+### ▶️ Running the project
+
+\`\`\`bash
 php artisan serve
-```
+\`\`\`
 
-### Index 
+---
+
+### Screenshots
+
+**Index**
 ![Index](images/index.jpeg)
 
-![Modal Exemplo](images/Modal.jpeg)
+**Modal Example**
+![Modal Example](images/Modal.jpeg)
